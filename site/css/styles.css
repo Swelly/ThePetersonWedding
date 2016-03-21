@@ -1,0 +1,259 @@
+/*
+
+Hey Michelle :) this comment will be public so you might want to remove it.
+
+Whenever you're adding padding or margin, the order of value is Top Right Bottom Left
+- - - -> T,R,B,L (trouble to remember easily)
+
+HOWEEVAA, you can use a shorter notation to seperately address left and right + top and bottom
+- - - -> [0, auto] === [TOP+BOTTOM, LEFT+RIGHT]
+
+You can also address the top and bottom seperately as follows
+- - - -> [0 auto 10px] === [TOP, LEFT+RIGHT, BOTTOM]
+
+You can also address them seperately in the CSS property itself like this:
+margin-left:;
+margin-bottom:;
+  - - -
+padding-top:;
+padding-bottom:;
+
+
+*/
+
+body, html {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  background: #fafafa;
+  font-size: 17px;
+}
+
+/* Whenever someone highlights text */
+*::selection {
+  background-color: #0098FF;
+  color: #FFF;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* Leaf SVG */
+#leafy-image {
+  display: block;
+  width: 50%;
+  height: 135px;
+  margin: 0 auto 35px;
+}
+
+/* Links */
+a, a.link {
+  text-decoration: none;
+  color: #0A0A0A;
+}
+
+a.link:visited {color: #0A0A0A;}
+
+
+/* Button */
+.reserve-button-wrapper {
+  text-align: center;
+  padding: 35px 0 0;
+}
+
+button {
+  width: 225px;
+  padding: 0.95rem 1rem 0.75rem;
+  border: none;
+  border-radius: 2px;
+  background-color: #555;
+  font-family: 'Bebas Neue', Helvetica, serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.75px;
+  color: #FFF;
+  vertical-align: middle;
+  transition: background-color 0.10s ease-in;
+  position: relative;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:focus {outline: none;}
+button:hover {
+  background-color: #329334;
+  cursor: pointer;
+}
+
+.landing-section > .centered {
+  position: relative;
+  top: 40%;
+  transform: translateY(-45%);
+}
+
+.landing-section > p.bottom-line {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #e7e7e7;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.content-block {
+  width: 73%;
+  max-width: 600px;
+  margin: 125px auto;
+}
+
+.header-container > .header-image, h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-image {
+  width: 20px;
+}
+
+.detail {margin-bottom: 75px;}
+.details-block {margin-bottom: 40px;}
+
+/*
+  Find a better Serif font face for these
+  https://google.com/fonts
+*/
+
+.details-block > h3 {
+  font-family: "Bebas Neue";
+  font-size: 22px;
+  font-weight: 300;
+  color: #0A0A0A;
+  margin-bottom: 6px;
+}
+.details-block > p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.header-underline {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+  height: 1px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Moon";
+  font-size: 52px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  color: #2D772E;
+  margin: 5px 0 0 3px;
+  transition: color 0.15s linear;
+}
+
+h2:hover {
+  color: #329334;
+  cursor: default;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #666;
+  line-height: 22px;
+}
+
+/* fallbacks have comma seperations */
+ul {font-family: "Open Sans", Helvetica, Arial, sans-serif;}
+
+
+.details-section {
+  position: relative;
+  max-width: 410px;
+  margin: 0 auto;
+  /* [ Weight | Color | Style ] */
+  border: 1.5px #CECECE solid;
+  padding: 25px 25px 0px;
+  border-radius: 3px;
+  transition: box-shadow 0.3s linear;
+  z-index: 0;
+}
+
+.details-section:hover {
+  /* [ Left,Right | Up, Down | Color ] */
+  box-shadow: -6px 8px 2px #CECECE;
+
+}
+
+.details-section:before {
+  content: "";
+  background: url('../images/patterns/cream_dust.png');
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.details-block > h2 {
+  color: #555;
+  font-size: 22px;
+}
+
+
+.wedding-party {
+  margin-bottom: 45px;
+}
+
+.wedding-party > ul {
+  text-align: center;
+  display: inline-block;
+  margin: 10px 20px 0;
+}
+.wedding-party > ul > li {
+  margin: 10px 8px;
+  color: #999;
+}
+
+ul.bride {
+  border-right: 1px solid #EEE;
+  text-align: right;
+}
+
+ul.groom {
+  border-left: 1px solid #EEE;
+  text-align: left;
+}
+li:first-child {color: #444 !important;}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  p {line-height: 26px;}
+  .content-block {width: 80%;}
+  .details-section {width: 300px;}
+  .details-block > h3 {font-size: 30px}
+  .landing-section > .centered {
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
+  }
+  .wedding-party > ul {padding-bottom: 10px; text-align: center !important}
+  ul.bride {border-right: none; border-bottom: 1px solid #EEE;}
+  ul.groom {border: none;}
+}
