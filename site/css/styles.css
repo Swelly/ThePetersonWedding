@@ -34,6 +34,8 @@ body, html {
   color: #FFF;
 }
 
+.hidden {display: none;}
+
 .bold {
   font-weight: 600;
 }
@@ -54,6 +56,9 @@ a, a.link {
 
 a.link:visited {color: #0A0A0A;}
 
+.registry {
+  margin-bottom: 75px !important;
+}
 
 /* Button */
 .reserve-button-wrapper {
@@ -109,6 +114,7 @@ button:hover {
   max-width: 600px;
   margin: 125px auto;
 }
+.content-block:last-child {margin: 80px auto;}
 
 .header-container > .header-image, h2 {
   display: inline-block;
@@ -217,9 +223,24 @@ ul {font-family: "Open Sans", Helvetica, Arial, sans-serif;}
   font-size: 22px;
 }
 
+.registry-links {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
 
-.wedding-party {
-  margin-bottom: 45px;
+.registry-links a.registry-link {
+  display: inline-block;
+  width: 150px;
+  box-sizing: border-box;
+  border: 1px solid #a4a4a4;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+a.registry-link img.logo-link {
+  width: 100%;
+  border-radius: 5px;
 }
 
 .wedding-party > ul {
