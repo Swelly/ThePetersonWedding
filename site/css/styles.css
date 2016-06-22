@@ -43,8 +43,7 @@ body, html {
 /* Leaf SVG */
 #leafy-image {
   display: block;
-  width: 50%;
-  height: 135px;
+  width: 30%;
   margin: 0 auto 35px;
 }
 
