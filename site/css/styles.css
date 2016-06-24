@@ -22,10 +22,13 @@ padding-bottom:;
 */
 
 body, html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   background: #fafafa;
   font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Whenever someone highlights text */
@@ -186,14 +189,14 @@ h2:hover {
 }
 
 p {
-  font-family: "Open Sans";
+  font-family: "Raleway";
   font-size: 16px;
-  color: #666;
+  color: #333;
   line-height: 22px;
 }
 
 /* fallbacks have comma seperations */
-ul {font-family: "Open Sans", Helvetica, Arial, sans-serif;}
+ul {font-family: "Raleways", Helvetica, Arial, sans-serif;}
 
 
 .details-section {
